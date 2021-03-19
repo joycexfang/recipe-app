@@ -34,6 +34,12 @@ const App = () => {
 
   return(
     <div className="App">
+      <div class="container">
+        <div class="row justify-content-center">
+          <h1>Recipe App</h1>
+          <img src="burger.png" alt="Burger Icon" width="80px"></img>
+        </div>
+      </div>
       <form onSubmit={getSearch} className="search-form">
         <input className="search-bar" type="text" value={search} onChange={updateSearch}/>
         <button className="search-button" type="submit">
@@ -41,15 +47,15 @@ const App = () => {
         </button>
       </form>
       <div className="recipes">
-      {recipes.map(recipe =>(
-        <Recipe
-          key={recipe.recipe.label}
-          title={recipe.recipe.label} 
-          calories={recipe.recipe.calories}
-          image={recipe.recipe.image}
-          ingredients={recipe.recipe.ingredients}
-        />
-      ))}
+        {recipes.map(recipe =>(
+          <Recipe
+            key={recipe.recipe.label}
+            title={recipe.recipe.label} 
+            calories={recipe.recipe.calories}
+            image={recipe.recipe.image}
+            ingredients={recipe.recipe.ingredients}
+          />
+        ))}
       </div>
     </div>
   );
