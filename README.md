@@ -1,5 +1,5 @@
 ## Recipe App
-This React Recipe App lets you search for recipes and it will display all of the ingredient quantities you need for any particular recipe! It uses the [https://developer.edamam.com/](Edamam API).
+This React Recipe App lets you search for recipes and it will display all of the ingredient quantities you need for any particular recipe! It uses the Edamam API: https://developer.edamam.com/.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
